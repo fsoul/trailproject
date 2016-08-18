@@ -35,8 +35,8 @@ public class TrailheadDataHandler {
     }
        
 	   
-	public Map<String, String> parse(String html){
-		Map<String, String> res = new Map<String, String>();
+	public List<String> parse(String html){
+		List<String>  res = new List<String> ();
 		
 
 		String badgeStart = '<div class=\'stats_number\'>';
@@ -48,23 +48,45 @@ public class TrailheadDataHandler {
 		String badge = html.substringBetween(badgeStart, badgeEnd);
 		String score = html.substringBetween(scoreStart, scoreEnd);
 
-		res.put(badge, score);
+		res.add(badge);
+		res.add(score);
 		System.debug(badge);
 		System.debug(score);
 		return res;
 	}   
 	
 	
-	public Map<String, Map<String, String>> getInternsData(List<String> internsIds){
-		Map<String, Map<String, String>> internsData = new Map<String, Map<String, String>>();
+	public void getInternsData(List<String> internsIds){
+		Map<String, List<String>> internsData = new Map<String, List<String>>();
 		
 		for(String internId : internsIds){
 			internsData.put(internId, parse(runCalloutRequest(internId)));
 		}
+		updateInternData(internsData);
 
 		System.debug(internsData);
 
-		return internsData;
 	} 
+
+	public void updateInternData(Map<String, List<String>> internsData){
+		List<Participant__c> participantsList = [SELECT Id, Name, trailheadId__c FROM Participant__c WHERE trailheadId__c IN :internsData.keySet()];
+		List<ChallengeToParticipant__c> ChallengeToParticipantList = [SELECT Id, Badges__c, ChallengeId__c, isNew__c, ParticipantId__c, Score__c, startBadges__c, startScore__c FROM ChallengeToParticipant__c];
+
+		for(ChallengeToParticipant__c junctionList : ChallengeToParticipantList){
+			for(Participant__c part: participantsList){
+				if(junctionList.ParticipantId__c == part.Id){
+					if(junctionList.isNew__c){
+						junctionList.startBadges__c = Integer.valueOf(internsData.get(part.trailheadId__c)[0]);
+						junctionList.startScore__c = Integer.valueOf(internsData.get(part.trailheadId__c)[1]);
+						junctionList.isNew__c = false;
+					}else{
+						junctionList.Badges__c = Integer.valueOf(internsData.get(part.trailheadId__c)[0]);
+						junctionList.Score__c = Integer.valueOf(internsData.get(part.trailheadId__c)[1]);
+					}
+				}
+			}
+		}
+		Database.update(ChallengeToParticipantList);
+	}
     
 }

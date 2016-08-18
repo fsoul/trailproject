@@ -32,6 +32,13 @@
     <Folder Include="staticresources\SiteSamples\img\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\CalloutMock.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\CalloutMock.cls</PhysicalRelativePath>
+      <Id>01p58000007hblyAAA</Id>
+      <LastModifiedDateUtcTicks>131159883560000000</LastModifiedDateUtcTicks>
+      <Hash>FFfe52uMEk7JrwdVTfUuTA==</Hash>
+    </Compile>
     <Compile Include="classes\ChangePasswordController.cls">
       <PhysicalRelativePath>src\classes\ChangePasswordController.cls</PhysicalRelativePath>
       <SubType>Class</SubType>
@@ -127,15 +134,8 @@
       <PhysicalRelativePath>src\classes\TrailheadDataHandler.cls</PhysicalRelativePath>
       <SubType>Class</SubType>
       <Id>01p58000007hVYNAA2</Id>
-      <LastModifiedDateUtcTicks>131159792250000000</LastModifiedDateUtcTicks>
-      <Hash>tbBtB/2EiyZLLQCmKtSIWA==</Hash>
-    </Compile>
-    <Compile Include="classes\trailheadPageController.cls">
-      <PhysicalRelativePath>src\classes\trailheadPageController.cls</PhysicalRelativePath>
-      <SubType>Class</SubType>
-      <Id>01p58000007hVW2AAM</Id>
-      <LastModifiedDateUtcTicks>131159082770000000</LastModifiedDateUtcTicks>
-      <Hash>K6tiy7pO2jUhhvXJBtiGCg==</Hash>
+      <LastModifiedDateUtcTicks>131159940670000000</LastModifiedDateUtcTicks>
+      <Hash>RW2JhNIaEZ+PQ6ty2bdY5Q==</Hash>
     </Compile>
     <Compile Include="components\SiteFooter.component">
       <PhysicalRelativePath>src\components\SiteFooter.component</PhysicalRelativePath>
@@ -236,11 +236,11 @@
       <Hash>Hm4x3kERtUa+UFLW0HoCWw==</Hash>
     </Compile>
     <Compile Include="pages\project.page">
-      <PhysicalRelativePath>src\pages\project.page</PhysicalRelativePath>
       <SubType>Page</SubType>
-      <Id>06658000002sJ9lAAE</Id>
-      <LastModifiedDateUtcTicks>131159082780000000</LastModifiedDateUtcTicks>
-      <Hash>fx9V8ho97zKHdmvgJOLJ6g==</Hash>
+      <PhysicalRelativePath>src\pages\project.page</PhysicalRelativePath>
+      <Id>06658000002sR4nAAE</Id>
+      <Hash>0ZGM4VBJ2XXZn5YUt0TwFg==</Hash>
+      <LastModifiedDateUtcTicks>131159978350000000</LastModifiedDateUtcTicks>
     </Compile>
     <Compile Include="pages\SiteLogin.page">
       <PhysicalRelativePath>src\pages\SiteLogin.page</PhysicalRelativePath>
@@ -711,6 +711,13 @@
     </Static>
   </ItemGroup>
   <ItemGroup>
+    <None Include="classes\CalloutMock.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\CalloutMock.cls-meta.xml</PhysicalRelativePath>
+      <LastModifiedDateUtcTicks>131159857680000000</LastModifiedDateUtcTicks>
+      <Hash>aF/lg9SrSXWcG94DkGkoIw==</Hash>
+      <DependentUpon>classes\CalloutMock.cls</DependentUpon>
+    </None>
     <None Include="classes\ChangePasswordController.cls-meta.xml">
       <PhysicalRelativePath>src\classes\ChangePasswordController.cls-meta.xml</PhysicalRelativePath>
       <SubType>Metadata</SubType>
@@ -806,15 +813,8 @@
       <PhysicalRelativePath>src\classes\TrailheadDataHandler.cls-meta.xml</PhysicalRelativePath>
       <SubType>Metadata</SubType>
       <DependentUpon>classes\TrailheadDataHandler.cls</DependentUpon>
-      <LastModifiedDateUtcTicks>131159791290000000</LastModifiedDateUtcTicks>
+      <LastModifiedDateUtcTicks>131159885490000000</LastModifiedDateUtcTicks>
       <Hash>WQBjOx4JsainCl68NxGRRA==</Hash>
-    </None>
-    <None Include="classes\trailheadPageController.cls-meta.xml">
-      <PhysicalRelativePath>src\classes\trailheadPageController.cls-meta.xml</PhysicalRelativePath>
-      <SubType>Metadata</SubType>
-      <DependentUpon>classes\trailheadPageController.cls</DependentUpon>
-      <LastModifiedDateUtcTicks>131159082770000000</LastModifiedDateUtcTicks>
-      <Hash>chSpUW6sUNTEfXRjwHBJgg==</Hash>
     </None>
     <None Include="components\SiteFooter.component-meta.xml">
       <PhysicalRelativePath>src\components\SiteFooter.component-meta.xml</PhysicalRelativePath>
@@ -915,11 +915,11 @@
       <Hash>NaRzv4oPcs7WZiMv1DsB9g==</Hash>
     </None>
     <None Include="pages\project.page-meta.xml">
-      <PhysicalRelativePath>src\pages\project.page-meta.xml</PhysicalRelativePath>
       <SubType>Metadata</SubType>
-      <DependentUpon>pages\project.page</DependentUpon>
-      <LastModifiedDateUtcTicks>131159082780000000</LastModifiedDateUtcTicks>
+      <PhysicalRelativePath>src\pages\project.page-meta.xml</PhysicalRelativePath>
       <Hash>hGPKgRaq2wPr518MAjWcrQ==</Hash>
+      <LastModifiedDateUtcTicks>131159978350000000</LastModifiedDateUtcTicks>
+      <DependentUpon>src\pages\project.page</DependentUpon>
     </None>
     <None Include="pages\SiteLogin.page-meta.xml">
       <PhysicalRelativePath>src\pages\SiteLogin.page-meta.xml</PhysicalRelativePath>

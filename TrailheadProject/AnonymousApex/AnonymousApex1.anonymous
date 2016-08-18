@@ -3,9 +3,8 @@
 
 TrailheadDataHandler d = new TrailheadDataHandler();
 
-List<String> lists = new List<String>();
-lists.add('005F0000006u5DsIAI');
-lists.add('005F0000006u5EHIAY');
-lists.add('005F0000006u5IsIAI');
+List<String> lists = new List<String> {'005F0000006u5DxIAI'};
+
+
 
 d.getInternsData(lists);

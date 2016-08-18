@@ -1,0 +1,1444 @@
+34.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+Execute Anonymous: 
+Execute Anonymous: 
+Execute Anonymous: 
+Execute Anonymous: TrailheadDataHandler d = new TrailheadDataHandler();
+Execute Anonymous: 
+Execute Anonymous: List<String> lists = new List<String> {'005F0000006u5DxIAI'};
+Execute Anonymous: 
+Execute Anonymous: 
+Execute Anonymous: 
+Execute Anonymous: d.getInternsData(lists);
+12:41:45.6 (6590705)|USER_INFO|[EXTERNAL]|00558000001OWEZ|bilinskyi@project.com|Greenwich Mean Time|GMT+01:00
+12:41:45.6 (6607894)|EXECUTION_STARTED
+12:41:45.6 (6612819)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+12:41:45.6 (8599338)|SYSTEM_MODE_ENTER|false
+12:41:45.6 (8676224)|SYSTEM_MODE_EXIT|false
+12:41:45.6 (8741953)|SYSTEM_MODE_ENTER|false
+12:41:45.6 (9137682)|CALLOUT_REQUEST|[21]|System.HttpRequest[Endpoint=https://trailhead.salesforce.com/users/profiles/005F0000006u5DxIAI, Method=GET]
+12:41:45.6 (796515891)|CALLOUT_RESPONSE|[21]|System.HttpResponse[Status=OK, StatusCode=200]
+12:41:45.6 (796652540)|USER_DEBUG|[24]|DEBUG|System.HttpResponse[Status=OK, StatusCode=200]
+12:41:45.6 (796711400)|USER_DEBUG|[25]|DEBUG|STATUS:OK
+12:41:45.6 (796810681)|USER_DEBUG|[26]|DEBUG|STATUS_CODE:200
+12:41:45.6 (799731280)|USER_DEBUG|[27]|DEBUG|<!DOCTYPE html>
+<html>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1471424941,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"1389e279d31874521f208bacf51b90e0",petok:"239887e1950b7a10c452ef2fed1f90265bb80d53-1471520506-1800",zone:"salesforce.com",rocket:"0",apps:{"clky":{"sid":"100752072","uid":"100467091"}},sha2test:0}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=0489c402f5/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<script type="text/javascript">window.NREUM&#124;&#124;(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"caf0a1fbb3","applicationID":"31152379","transactionName":"Jl1ZFkZWX1gEFB9CSwBARE1ES1xSCApVRBcWWlgV","queueTime":1,"applicationTime":107,"agent":""}</script>
+<script type="text/javascript">(window.NREUM&#124;&#124;(NREUM={})).loader_config={xpid:"VQUBVlRRABADVVBXBQIAXw=="};window.NREUM&#124;&#124;(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o&#124;&#124;e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o&#124;&#124;new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t&#124;&#124;"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),s.on(m,function(){this.bstStart=Date.now()}),s.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(17)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name&#124;&#124;"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m&#124;&#124;a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n&#124;&#124;"blob"===n&#124;&#124;"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34&#124;&#124;p<10)&#124;&#124;window.opera&#124;&#124;t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type&#124;&#124;o.called===o.totalCbs&&(o.onloadCalled&#124;&#124;"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs&#124;&#124;!this.onloadCalled&&"function"==typeof n.onload&#124;&#124;this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)&#124;&#124;this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port&#124;&#124;(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname&#124;&#124;n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol&#124;&#124;":"===e.protocol&#124;&#124;e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname&#124;&#124;a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e&#124;&#124;(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e&#124;&#124;0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n&#124;&#124;{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e&#124;&#124;(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o&#124;&#124;(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)&#124;&#124;(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t&#124;&#124;(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;c<s;c++)a[c].apply(i,r);var u=f[w[n]];return u&&u.push([v,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]&#124;&#124;[]}function p(t){return u[t]=u[t]&#124;&#124;o(n)}function h(t,e){c(t,function(t,n){e=e&#124;&#124;"feature",w[n]=e,e in f&#124;&#124;(f[e]=[])})}var m={},w={},v={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return v}function i(){return new r}var a="nr@context",s=t("gos"),c=t(15),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t&#124;&#124;"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!g++){var t=y.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(w,function(e,n){t[e]&#124;&#124;(t[e]=n)});var n="https"===m.split(":")[0]&#124;&#124;t.sslForHttp;y.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(15),f=window,u=f.document,d="addEventListener",l="attachEvent",p=f.XMLHttpRequest,h=p&&p.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:p,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var m=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-971.min.js"},v=p&&h&&h[d]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:m,features:{},xhrWrappable:v};u[d]?(u[d]("DOMContentLoaded",i,!1),f[d]("load",r,!1)):(u[l]("onreadystatechange",o),f[l]("onload",r)),s("mark",["firstbyte",a()],null,"api");var g=0},{}]},{},["loader",2,10,4,3]);</script>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+<title>Trailhead &#124; Alina Andrusenko</title>
+<meta name="description" content="Salesforce Developer Network: Salesforce1 Developer Resources" />
+<meta property="og:title" content="Trailhead &#124; Alina Andrusenko" />
+<meta property="og:description" content="Salesforce Developer Network: Salesforce1 Developer Resources" />
+<meta property="og:image" content="https://trailhead.salesforce.com/assets/trailhead-og-flogo-91bd72396d25b42dd9ec89aef5368916e32011aff50892cbdf5b1a19ec7695f0.png" />
+<meta property="og:image:url" content="https://trailhead.salesforce.com/assets/trailhead-og-flogo-91bd72396d25b42dd9ec89aef5368916e32011aff50892cbdf5b1a19ec7695f0.png" />
+<meta property="og:image:height" content="250" />
+<meta property="og:image:width" content="250" />
+<meta property="og:url" content="https://trailhead.salesforce.com/users/profiles/005F0000006u5DxIAI" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@trailhead" />
+<meta name="url" content="https://trailhead.salesforce.com/users/profiles/005F0000006u5DxIAI" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link href='/apple-touch-icon-57x57.png' rel='apple-touch-icon' sizes='57x57'>
+<link href='/apple-touch-icon-60x60.png' rel='apple-touch-icon' sizes='60x60'>
+<link href='/apple-touch-icon-72x72.png' rel='apple-touch-icon' sizes='72x72'>
+<link href='/apple-touch-icon-76x76.png' rel='apple-touch-icon' sizes='76x76'>
+<link href='/apple-touch-icon-114x114.png' rel='apple-touch-icon' sizes='114x114'>
+<link href='/apple-touch-icon-120x120.png' rel='apple-touch-icon' sizes='120x120'>
+<link href='/apple-touch-icon-144x144.png' rel='apple-touch-icon' sizes='144x144'>
+<link href='/apple-touch-icon-152x152.png' rel='apple-touch-icon' sizes='152x152'>
+<link href='/apple-touch-icon-180x180.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='/android-chrome-192x192.png' rel='icon' sizes='192x192' type='image/png'>
+<link href='/manifest.json' rel='manifest'>
+<meta content='#da532c' name='msapplication-TileColor'>
+<meta content='/mstile-144x144.png' name='msapplication-TileImage'>
+<meta content='#ffffff' name='theme-color'>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="ZLrOZaIgvUVnnQXjIz0yyzFbg6p0VWTSrsorhu2a2GqUr0dpSa62LNw9MSRT+9vo7hN4WN/B0+biKlgGOgCUpQ==" />
+<meta content='en' name='locale'>
+<link rel="stylesheet" media="screen" href="/assets/holygrail/includes-52902fb21a3fa1ed3d443535dc705a2cb489943c7c540de634981be7021c97b4.css" />
+<link rel="stylesheet" media="screen" href="/assets/trailhead/trailhead-84351e24ef8e763613747645ab4af3c39b5107ae0d6a03fbd0c8ce1b1d972270.css" />
+<script src="/assets/th/holygrail-3f800ce30e29daa73c906ce1f9f7aec45859bc6ce82fe908991b3c8f7277cdeb.js"></script>
+<link rel="stylesheet" media="screen" href="/assets/user_profile-6dabf9fbef2a39f3c55c40a611c5399cd0ef89d56b22d48a505eb0b22edcb322.css" />
+
+</head>
+<body>
+<header>
+<div class='navbar navbar-static-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<div class='mobileHeaderContainer clearfix'>
+<a class='brand clearfix' href='/en'>
+<img src='/assets/trailhead-logo-da1538341ed245cd30f386300b6c5fb9c5f7e5a7d431c500c7f14800d395fa0a.png'>
+</a>
+<div class='headerButtonsContainer pull-right'>
+<div class='spanButton clearfix pull-right'>
+<a class='btn btn-success' href='https://developer.salesforce.com/trailhead/signup?d=70130000000iMGP'>
+Sign Up &rsaquo;
+</a>
+</div>
+<div class='spanButton clearfix pull-right'>
+<a class='btn btn-primary' href='/signin' id='login-button'>
+Login &rsaquo;
+</a>
+</div>
+</div>
+<div class='social-search clearfix pull-right'>
+<div class='search-social-inner clearfix' data-placeholder='Search' id='search-social-container'>
+<gcse:searchbox-only enableAutoComplete='true' resultsUrl='https://go.pardot.com/s/27572/bZmGraVP6uMckd2zJnklMehlfDezI7wZ'></gcse:searchbox-only>
+</div>
+</div>
+</div>
+<div class='mobile mobileHeader'>
+<a id='mobileMenu'>
+<img src='/assets/MenuMobile-bef0ea7da39c3f31b03ea28f88049606b6b7611d51917758c304b56f982a2bf9.png'>
+</a>
+<a class='mobileLogo' href='/'>
+<img src='/assets/trailhead-logo-da1538341ed245cd30f386300b6c5fb9c5f7e5a7d431c500c7f14800d395fa0a.png'>
+</a>
+<a id='mobileSearch'>
+<img src='/assets/SearchMobile-ecbf29e223da1b7d1dcd965bc4f692751d185dc9707041b9d32f15e2e33f05f1.png'>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script src="/assets/th/afterheader-1887ecc11ba45416f4971b47e5080094bbe0fc69c8e02d2247aa7da2ae695aba.js"></script>
+<script>
+  $("#btn-account").on('click', function(e) {
+    e.preventDefault();
+    $("#user-info-container").toggle();
+  });
+  
+  $("#user-info-container").on('mouseleave', function(e) {
+    $(this).toggle();
+  });
+  
+  function animateSearchIn() {
+    $('#mobileSearchContainerOverlay').fadeIn();
+    $('#mobileSearchContainer').fadeIn();
+    $('.gsc-input').focus();
+    $("#mobileSearchContainer .searchBar").animate({
+      top: '0px',
+    }, 500, function() {
+      $("#mobileSearchContainer .searchBar").animate({
+        top: '-20px',
+      }, 300);
+    });
+  }
+  
+  function animateSearchOut() {
+    $("#mobileSearchContainer .searchBar").animate({
+      top: '0px',
+    }, 300, function() {
+      $("#mobileSearchContainer .searchBar").animate({
+        top: '-80px',
+      }, 500, function() {
+        $('#mobileSearchContainer').fadeOut();
+        $('#mobileSearchContainerOverlay').fadeOut();
+        $('.gsc-input').val('');
+      });
+    });
+  }
+  
+  var intval_placeholder_search;
+  
+  function checkPlaceholderSearch(){
+  	if( jQuery("#newSearchContainer").find('input[name="search"]').length == 1 ){
+    	var a=jQuery("#newSearchContainer");
+  		a.find('input[name="search"]').attr("placeholder",a.attr("data-placeholder"));
+      $('#newSearchContainer td.gsc-input').after($(''));
+  
+      $('.clear-icon').click(function(){
+        $('#newSearchContainer input.gsc-input').val('');
+      });
+      clearInterval(intval_placeholder_search);
+    }
+  }
+  
+  function makeNewSearch(){
+    var newMobileSearchOverlay = $('<div />').attr('id', 'mobileSearchContainerOverlay');
+    var newMobileSearch = $('<div />').attr('id', 'mobileSearchContainer');
+    var searchBar = $('<div />').addClass('searchBar');
+  
+    var newSearchContainer = $('<div />').attr({
+    	id: 'newSearchContainer',
+      'data-placeholder':'Search'
+    }).on('click', '.btn-search-cancel', function(){
+      hideMobileSearchContainer();
+    });
+  
+    var newSearch = $('<gcse:searchbox-only></gcse:searchbox-only>').attr({
+      resultsUrl : '//go.pardot.com/s/27572/bZmGraVP6uMckd2zJnklMehlfDezI7wZ',
+      enableAutoComplete : true
+    });
+  
+    $(newSearchContainer).append(newSearch);
+  
+    $(searchBar).append(newSearchContainer);
+    $(newMobileSearch).append($(searchBar));
+  
+    $('body').prepend(newMobileSearchOverlay);
+    $('body').prepend(newMobileSearch);
+  
+    $(newMobileSearchOverlay).click(function(){
+  	  animateSearchOut();
+    });
+  
+  
+    if( jQuery("#newSearchContainer").find('input[name="search"]').length == 0 ){
+      intval_placeholder_search = setInterval(function(){ checkPlaceholderSearch() }, 100);
+    }
+  }
+  
+  var intervalBtn;
+  
+  function placeMobileSearchCancelBtn(){
+    if( $('#mobileSearchContainer td.gsc-clear-button').length > 0 ){
+      clearInterval(intervalBtn);
+  
+      $('#mobileSearchContainer .gsc-search-button').remove();
+  
+      var cancelBtn = $('<button class="btn-search-cancel" />');
+  
+      $(cancelBtn).text('Cancel').attr('type', 'button');
+  
+      $('#mobileSearchContainer div.gsc-clear-button').remove();
+      $('#mobileSearchContainer td.gsc-clear-button').append(cancelBtn);
+    }
+  }
+  
+  function showMobileSearchContainer(){
+    if( $('#mobileSearchContainer .gsc-clear-button button').length == 0 ){
+    	placeMobileSearchCancelBtn();
+    }
+  
+    if( $('#mobileSearchContainer td.gsc-clear-button').length == 0 ){
+    	intervalBtn = setInterval(function(){placeMobileSearchCancelBtn()}, 500);
+    }
+    animateSearchIn();
+  }
+  
+  function hideMobileSearchContainer(){
+    animateSearchOut();
+  }
+  
+  function mobileSidebarFix(){
+    if( $('body').width() <= 979 ){
+    	$('.mobileHeaderContainer').addClass('on-mobile');
+    }else{
+    	$('.mobileHeaderContainer').removeClass('on-mobile');
+    }
+  }
+  
+  var hideMobileHeaderContainer = true;
+  
+  
+  $(document).ready(function(){
+  
+      /*!
+      * jquery.scrollto.js 0.0.1 - https://github.com/yckart/jquery.scrollto.js
+      * Scroll smooth to any element in your DOM.
+      *
+      * Copyright (c) 2012 Yannick Albert (http://yckart.com)
+      * Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php).
+      * 2013/02/17
+      **/
+      $.scrollTo = $.fn.scrollTo = function(x, y, options){
+        if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
+  
+        options = $.extend({}, {
+          gap: {
+            x: 0,
+            y: 1
+          },
+          animation: {
+            easing: 'swing',
+            duration: 600,
+            complete: $.noop,
+            step: $.noop
+          }
+        }, options);
+  
+        return this.each(function(){
+          var elem = $(this);
+          elem.stop().animate({
+            scrollLeft: !isNaN(Number(x)) ? x : $(y).offset().left + options.gap.x,
+            scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top + options.gap.y
+          }, options.animation);
+        });
+      };
+  
+      makeNewSearch();
+      mobileSidebarFix();
+  
+      $('#mobileSearch').unbind('click');
+  
+      $('#mobileSearch').click(function(){
+        showMobileSearchContainer();
+      });
+  
+  
+      $(window).scroll(function() {
+        if( hideMobileHeaderContainer == true && $(window).scrollLeft() > ($('.mobileHeaderContainer').outerWidth()/2) ){
+          hideMobileHeaderContainer = false;
+  
+          setTimeout(function(){hideMobileHeaderContainer=true;}, 600);
+          //$('html,body').scrollTo(0, 0, function(){});
+          $('header').removeClass('showMobile');
+          $('#SDNmaintemplate').removeClass('showMobile');
+          $('footer').removeClass('showMobile');
+        }
+      });
+  
+      $(window).resize(function(){
+      	mobileSidebarFix();
+      });
+  });
+</script>
+
+</header>
+<div class='hidden'>
+<div class='login_modal'>
+<div class='trailhead-login-wizard-container'>
+<div class='trailhead-login-wizard-container-inner'>
+<div class='trailhead-login-wizard-panel'>
+<h1 class='trailhead-wizard-username text-center'>
+Howdy, Trailblazer!
+</h1>
+<div class='text-center'>
+<img class='login_page_logo' src='/assets/trailhead-flogo-1c99be34ac805c0cb128c1bb5e0cf6570943530f86063bebb1cf576c93c30069.png'>
+</div>
+
+<h2 class='text-center'>
+Please log in to Trailhead to start earning points and badges!
+</h2>
+<p class='login-wizard-description'>
+Use the same account next time to pick up where you left off.
+</p>
+<p class='learn-more text-center'>
+<a class='trailhead-login-wizard-more'>
+<i class='icon-help'></i>
+Which account should I use?
+</a>
+</p>
+<div class='login-wizard-bottom-section clearfix'>
+<a class='btn login-wizard-login' href='/signin'>
+Log in to Trailhead
+</a>
+<p class='text-center'>
+New to Salesforce?
+<br>
+<a href='https://developer.salesforce.com/trailhead/signup?d=70130000000iMGP' target='_blank'>
+Sign up for a free Developer Edition
+</a>
+</p>
+</div>
+
+</div>
+<div class='trailhead-login-wizard-panel trailhead-login-wizard-panel-choose'>
+<a class='trailhead-login-wizard-more-close clearfix'>
+<i class='icon-arrow-l-normal pull-left'></i>
+Back
+</a>
+<h2 class='text-center'>
+Choose the account where you want to store your points and badges. You can use either:
+</h2>
+<table class='trailhead-login-wizard-table'>
+<thead>
+<tr>
+<th class='trailhead-login-wizard-table-col1'></th>
+<th class='trailhead-login-wizard-table-col2 text-center'>
+<span>
+Production
+</span>
+<span>
+Salesforce account
+</span>
+</th>
+<th class='text-center'>
+<span>
+Developer Edition
+</span>
+<span>
+or Admin Playground
+</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Do I need to be a Salesforce customer?
+</td>
+<td class='trailhead-login-wizard-center'>
+<strong>Yes</strong>
+</td>
+<td class='trailhead-login-wizard-center'>
+<span>
+<strong>No</strong>
+</span>
+<span>
+(It's free!)
+</span>
+</td>
+</tr>
+<tr>
+<td>
+Can I use it to create my Trailhead profile and store my badges?
+</td>
+<td class='trailhead-login-wizard-center'>
+<strong>Yes</strong>
+</td>
+<td class='trailhead-login-wizard-center'>
+<strong>Yes</strong>
+</td>
+</tr>
+<tr>
+<td>
+Can I use it to complete Trailhead challenges?
+</td>
+<td class='trailhead-login-wizard-center'>
+<span>
+<strong>No</strong>
+</span>
+<span>
+(except for multiple choices quizzes)
+</span>
+</td>
+<td class='trailhead-login-wizard-center'>
+<strong>Yes</strong>
+</td>
+</tr>
+<tr>
+<td>
+Can I keep my Trailhead badges if I leave my company?
+</td>
+<td class='trailhead-login-wizard-center'>
+<strong>No</strong>
+</td>
+<td class='trailhead-login-wizard-center'>
+<span>
+<strong>Yes</strong>
+</span>
+<span>
+(use a personal email address)
+</span>
+</td>
+</tr>
+<tr class='trailhead-login-wizard-tfooter'>
+<td class='text-center' colspan='3'>
+<div class='media'>
+<a class='pull-left'>
+<img src='/assets/trailhead/alert-1ba868c3471dc6524f202c656df0db71daeb6c4a432af4ada551063192829f54.png'>
+</a>
+<div class='media-body'>
+<span class='trailhead-muted'>
+Always use the same account when logging in to access your badges!
+</span>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<script>
+  //@TODO move to i18n.js
+  var translations = {
+    profile: 'My Trailhead Account >',
+    who_am_i: 'Howdy, ###!',
+    search: 'Search'
+  };
+</script>
+<div class='navbar navbar-static-top navbar-inverse trailhead-nav'>
+<div class='container'>
+<div class='row'>
+<div class='navbar-inner'>
+<ul class='nav'>
+<li>
+<a href='/en'>
+Home
+</a>
+</li>
+<li>
+<a href='/trails'>
+Trails
+</a>
+</li>
+<li>
+<a href='/modules'>
+Modules
+</a>
+</li>
+<li>
+<a href='/projects'>
+Projects
+</a>
+</li>
+<li>
+<a href='/super_badges'>
+Superbadges
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class='contentArea'>
+<div class='container trailhead-container'>
+<div class='row-fluid' id='main_profile_container'>
+<div class='span3 left_section profile-page-sidebar'>
+<span id='j_id0:j_id1:j_id2:j_id42'>
+<div class='clearfix' id='profile_details_container'>
+<div id='user_pic'>
+<span id='j_id0:j_id1:j_id2:j_id42:j_id43:j_id46'>
+<ul class='profile csoptimizequestion' id='cs:profile'>
+<li class='usericon'>
+<img alt='Alina Andrusenko' src='https://developer.salesforce.com/forums/profilephoto/729F0000000phty/F'>
+</li>
+</ul>
+</span>
+</div>
+<div class='user_stats_list_container'>
+<ul class='user_stats_list'>
+<li class='user_name'>
+Alina Andrusenko
+</li>
+</ul>
+<ul class='forums-profile sidebar action-links unstyled'>
+</ul>
+<div class='mobile-social-icons'></div>
+</div>
+</div>
+</span>
+</div>
+<div class='span9' id='profile_questions_container'>
+<div class='profile-content-section'>
+<meta content='en' name='locale'>
+<div class='row trailhead_profile'>
+<div class='span9' id='user_stats'>
+<div class='row'>
+<div class='span2 user_stats' data-target='#page2' data-toggle='tab' rel='badges'>
+<a>
+<div class='stats_number'>60</div>
+<div class='stats_text'>
+Trailhead <br /> Badges
+</div>
+</a>
+</div>
+<div class='hidden span2 user_stats' data-target='#page4' data-toggle='tab' rel='event_badges'>
+<a>
+<div class='stats_number'>0</div>
+<div class='stats_text'>
+Community <br /> Badges
+</div>
+</a>
+</div>
+<div class='span4 pull-right trailhead-points'>
+<span class='trailhead-total-points'>
+<i class='icon-star'></i>
+<b>66900</b>
+Trailhead Points Earned!
+</span>
+<span class='community-total-points hidden'>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class='row'>
+<div class='tab-content span9'>
+<div class='tab-pane' id='page1'>
+<div class='row incomplete-challenges'>
+<div class='span9'>
+<h3>
+In Progress Superbadges
+</h3>
+<hr>
+<div class='row module'>
+<div class='span10'>
+<a href="/super_badges/superbadge_reports"><img class='badge-img pull-left' src='https://developer.salesforce.com/resource/images/trailhead/badges/superbadges/trailhead_superbadge_reports_dashboards.png'>
+</a><a href="/super_badges/superbadge_reports"><h2>
+Reports &amp; Dashboards Specialist
+</h2>
+</a></div>
+<div class='span2'>
+</div>
+</div>
+</div>
+</div>
+<div class='row incomplete-challenges'>
+<div class='span9'>
+<h3>
+In Progress Modules
+</h3>
+<hr>
+<div class='row module'>
+<div class='span10'>
+<a href="/module/lex_migration_whatsnew"><img class='badge-img pull-left' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_experience_features.png'>
+</a><a href="/module/lex_migration_whatsnew"><h2>
+Lightning Experience Features
+</h2>
+</a></div>
+<div class='span2'>
+</div>
+</div>
+<div class='row module'>
+<div class='span10'>
+<a href="/module/lex_migration_customization"><img class='badge-img pull-left' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_app_customization_lite.png'>
+</a><a href="/module/lex_migration_customization"><h2>
+App Customization Lite
+</h2>
+</a></div>
+<div class='span2'>
+</div>
+</div>
+<div class='row module'>
+<div class='span10'>
+<a href="/module/identity_external"><img class='badge-img pull-left' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_salesforce_identity_for_customers.png'>
+</a><a href="/module/identity_external"><h2>
+Identity for Customers
+</h2>
+</a></div>
+<div class='span2'>
+</div>
+</div>
+<div class='row module'>
+<div class='span10'>
+<a href="/module/lex_dev_lc_basics"><img class='badge-img pull-left' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_components_basics.png'>
+</a><a href="/module/lex_dev_lc_basics"><h2>
+Lightning Components Basics
+</h2>
+</a></div>
+<div class='span2'>
+</div>
+</div>
+<div class='row module'>
+<div class='span10'>
+<a href="/module/app_deployment"><img class='badge-img pull-left' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_change_management.png'>
+</a><a href="/module/app_deployment"><h2>
+Change Management
+</h2>
+</a></div>
+<div class='span2'>
+</div>
+</div>
+</div>
+</div>
+<div class='row incomplete-challenges'>
+<div class='span9'>
+<h3>
+In Progress Projects
+</h3>
+<hr>
+<div class='row module'>
+<div class='span10'>
+<a href="/project/workshop-battle-station"><img class='badge-img pull-left' src='https://developer.salesforce.com/resource/images/trailhead/badges/projects/trailhead_project_battle_station.png'>
+</a><a href="/project/workshop-battle-station"><h2>
+Build a Battle Station App
+</h2>
+</a></div>
+<div class='span2'>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='tab-pane active badges' id='page2'>
+<section>
+<h3>
+Superbadges
+</h3>
+<hr>
+<div class='row'>
+<div class='span2'>
+<div class='text-center'>
+<a href="/super_badges/superbadge_security"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/superbadges/trailhead_superbadge_security.png'>
+<p>
+Security Specialist
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/super_badges/superbadge_apex"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/superbadges/trailhead_superbadge_apex.png'>
+<p>
+Apex Specialist
+</p>
+</a></div>
+</div>
+</div>
+</section>
+<section>
+<h3>
+Badges
+</h3>
+<hr>
+<div class='row'>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/lex_implementation_reports_dashboards"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_reports_dashboards.png'>
+<p>
+Lightning Experience Reports &amp; Dashboards
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/lex_implementation_chatter"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_chatter.png'>
+<p>
+Lightning Experience Chatter Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/lex_migration_rollout"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_experience_rollout.png'>
+<p>
+Lightning Experience Rollout
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/service_console_customize"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_service_cloud_customization.png'>
+<p>
+Service Console Customization
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/lex_implementation_data_management"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_data_management.png'>
+<p>
+Lightning Experience Data Management
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/lightning_connect"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_connect.png'>
+<p>
+Salesforce Connect
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/service_basics"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_service_cloud-basics.png'>
+<p>
+Service Cloud Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/reports_dashboards"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_reports_and_dashboards.png'>
+<p>
+Reports &amp; Dashboards
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/heroku_enterprise_baiscs"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_heroku_enterprise.png'>
+<p>
+Heroku Enterprise Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/lex_dev_overview"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_experience_development.png'>
+<p>
+Lightning Experience Development
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/transaction_security"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_transaction_security.png'>
+<p>
+Transaction Security
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/lex_dev_visualforce"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_visualforce_and_lightning.png'>
+<p>
+Visualforce &amp; Lightning Experience
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/lightning_app_builder"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_app_builder.png'>
+<p>
+Lightning App Builder
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/salesforce_advantange_what_we_do"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_advantage_salesforce_cloud_benefits.png'>
+<p>
+Salesforce Cloud Benefits
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/event_monitoring"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_shield_event_monitoring.png'>
+<p>
+Event Monitoring
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/summer_16"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_release_summer_16.png'>
+<p>
+Summer '16 Release
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/lex_migration_introduction"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_experience_basics.png'>
+<p>
+Lightning Experience Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/catter"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_catter.png'>
+<p>
+Catter
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/apex_integration_services"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_apex_integration.png'>
+<p>
+Apex Integration Services
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/visualforce_fundamentals"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_visualforce_basics.png'>
+<p>
+Visualforce Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/workplace_equality_diversity_and_inclusion"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_equality_business_value_equality.png'>
+<p>
+Business Value of Equality
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/workplace_equality_be_more_inclusive"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_equality_diversity_inclusion_strategies.png'>
+<p>
+Diversity and Inclusion Strategies
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/drucker_five_most_import_questions"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_drucker_5_questions.png'>
+<p>
+Drucker School—Business Performance Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/api_basics"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_api_basics.png'>
+<p>
+API Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/service_casefeed_basics"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_case_feed.png'>
+<p>
+Case Feed
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/lex_salesforce_basics"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_salesrep_salesforce_basics.png'>
+<p>
+Salesforce User Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/apex_basics_dotnet"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_dotnet_apex_basics.png'>
+<p>
+Apex &amp; .NET Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/workplace_equality_inclusion_challenges"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_equality_impact_unconscious_bias.png'>
+<p>
+Impact of Unconscious Bias
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/business_process_automation"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_process_automation.png'>
+<p>
+Process Automation
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/salesforce_advantange_who_we_are"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_advantage_salesforce_success_model.png'>
+<p>
+Salesforce Success Model
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/lex_implementation_basics"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_salesforce_basics.png'>
+<p>
+Salesforce Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/asynchronous_apex"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_asynchronous_apex.png'>
+<p>
+Asynchronous Apex
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/apex_testing"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_apex_testing.png'>
+<p>
+Apex Testing
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/advanced_formulas"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_modules_advanced_formulas.png'>
+<p>
+Advanced Formulas
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/community_cloud_basics"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_communities_basics.png'>
+<p>
+Communities Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/salesforce_advantange_how_we_do_it"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_advantage_salesforce_technology_basics.png'>
+<p>
+Salesforce Technology Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/data_quality"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_data_quality.png'>
+<p>
+Data Quality
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/admin_intro_opptys_leads"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_crm_leads_and_opportunities.png'>
+<p>
+Leads &amp; Opportunities
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/nonprofit_fundraising_basics"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_nonprofit_fundraising_basics.png'>
+<p>
+Fundraising Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/search_solution_basics"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_search_solution_basics.png'>
+<p>
+Search Solution Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/lex_implementation_user_setup_mgmt"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_data_security_lite.png'>
+<p>
+User Management
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/apex_triggers"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_apex_triggers.png'>
+<p>
+Apex Triggers
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/salesforce_advantange_ecosystem"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_advantage_salesforce_ecosystem.png'>
+<p>
+Salesforce Ecosystem
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/admin_intro_crm_basics"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_crm_basics.png'>
+<p>
+CRM Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/apex_database"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_apex_basics_and_database.png'>
+<p>
+Apex Basics &amp; Database
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/database_basics_dotnet"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_dotnet_database_basics.png'>
+<p>
+Database &amp; .NET Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/admin_intro_accounts_contacts"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_crm_accounts_and_contacts.png'>
+<p>
+Accounts &amp; Contacts
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/point_click_business_logic"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_formulas_and_validations.png'>
+<p>
+Formulas &amp; Validations
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/identity_login"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_identity_user_authentication.png'>
+<p>
+User Authentication
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/identity_basics"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_identity_basics.png'>
+<p>
+Identity Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/data_security"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_data_security.png'>
+<p>
+Data Security
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/chatter"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_chatter_basics.png'>
+<p>
+Chatter Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/salesforce1_mobile_app"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_salesforce1_mobile_basics.png'>
+<p>
+Salesforce1 Mobile Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/customizing_user_interface"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_ui_customization.png'>
+<p>
+UI Customization
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/data_management"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_data_management.png'>
+<p>
+Data Management
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/data_modeling"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_data_modeling.png'>
+<p>
+Data Modeling
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/module/starting_force_com"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_salesforce1_platform_basics.png'>
+<p>
+Salesforce Platform Basics
+</p>
+</a></div>
+</div>
+<div class='span2'>
+<div class='text-center'>
+<a href="/project/quickstart-apex"><img class='badge-img' src='https://developer.salesforce.com/resource/images/trailhead/badges/projects/trailhead_project_quick_start_apex.png'>
+<p>
+Quick Start: Apex
+</p>
+</a></div>
+</div>
+</div>
+</section>
+</div>
+<div class='tab-pane badges' id='page4'>
+<section>
+<h3>
+Event Badges
+</h3>
+<hr>
+<div class='row'>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="/assets/th/trailhead-9563a61635ca1fbcc1522d9985ded415bc448125aacf1bbba5b84e3256b5e5b2.js"></script>
+<script src="/assets/th/trailhead_profile-716ecb196e842e6d63518cbcfce25783546d0f5d8fc59e1c3c020fa9f60e6af3.js"></script>
+<script>
+    // new code for handing tabs
+    var tabs = $('[data-toggle="tab"]');
+    tabs
+      .on('click', function (e) {
+        e.preventDefault();
+        tabs.removeClass('active');
+        $(this).tab('show').addClass('active');
+      })
+      .first()
+      .trigger('click');
+  
+    var checkbox_state = $('#are_badges_public').is(':checked');
+    $('#update_error').hide();
+  
+    $('#are_badges_public').change(function(){
+      var promise = $.ajax("/users/profiles/005F0000006u5DxIAI", {
+        type: 'PUT',
+        data: { "are_badges_public": $('#are_badges_public').is(':checked') }
+      });
+  
+      promise.then(
+        function(data){
+          $('#update_error').hide();
+          checkbox_state = $('#are_badges_public').is(':checked');
+        },
+        function(err) {
+          $('#update_error').show();
+          $('#are_badges_public').attr('checked', checkbox_state);
+          checkbox_state = $('#are_badges_public').is(':checked');
+        });
+    });
+</script>
+
+<div class='trailhead-employee-modal modal hide fade' data-path='/employee_modal'>
+<div class='modal-body'></div>
+</div>
+<footer>
+<div class='footer-top footer-top-fake'>
+<div class='container'>
+<div class='row'>
+<div class='span7'>
+<ul class='inline'>
+<li>
+<a href='https://salesforce.com'>
+Salesforce
+</a>
+</li>
+<li>
+<a href='https://developer.salesforce.com/gettingstarted'>
+Get Started
+</a>
+</li>
+<li>
+<a href='https://developer.salesforce.com'>
+Salesforce Developers
+</a>
+</li>
+<li>
+<a href='https://www.buttonclickadmin.com'>
+Salesforce Admins
+</a>
+</li>
+<li>
+<a href='https://developer.salesforce.com/forums'>
+Developer Forums
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='footer-top'>
+<div class='container'>
+<div class='row'>
+<div class='span9'>
+<span class='footer-copyright'>
+© Copyright 2000-2016 salesforce.com, inc. All rights reserved. Various trademarks held by their respective owners.<br>Salesforce.com, inc. The Landmark @ One Market, Suite 300, San Francisco, CA 94105, United States
+</span>
+<div class='footer-links small'>
+<a href='//www.salesforce.com/company/privacy.jsp'>
+Privacy Statement
+</a>
+<a href='//www.salesforce.com/company/security.jsp'>
+Security Statement
+</a>
+<a href='/files/tos/Developerforce_TOU_20101119.pdf'>
+Terms of Use
+</a>
+<a class='feedback' href='#' itemid='ebd396c9-3b7c-43bd-8223-419bc8a1cbeb'>
+<img alt='Feedback' src='/assets/opinionlab-orange-10cdc78e0c95250205cbbaf8919dc9944a29bc4309b75a47704968b747db4d0b.gif'>
+Feedback
+</a>
+<a href='http://www.salesforce.com/company/'>
+About Us
+</a>
+<a class='language-switcher' href='javascript:void(0);'>
+Language:
+<span class='current-language'>
+English
+</span>
+</a>
+<div class='language-switcher-popup hidden'>
+<h4 class='language-popup-title'>
+Choose a Language
+</h4>
+<ul class='unstyled language-list'>
+<li class='' data-language='en'>
+English
+</li>
+<li class='' data-language='de'>
+Deutsch
+</li>
+<li class='' data-language='ja'>
+日本語
+</li>
+<li class='' data-language='fr'>
+Français
+</li>
+<li class='' data-language='es-MX'>
+Español (México)
+</li>
+<li class='' data-language='pt-BR'>
+Português (Brasil)
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class='span3'></div>
+</div>
+</div>
+</div>
+</footer>
+<script src="/assets/th/footerbottom-08d0e4a9bd8d6c60a6c440b7bba4ceef9a177ded26e655814f139baee64300be.js"></script>
+
+<script src="/assets/th/misc-bb54fdd57b03c652e179e939637b16d7d49e5e38dc2b2505d9b5ceac49e931bb.js"></script>
+<script src="/assets/th/clippy-53e602f999d4d655ce9bdaa0fe27a59eee682a79d882d89d2b869474e36f18aa.js"></script>
+<script src="/assets/th/swfobject-564f8442bfcd02a9178805938de529f304313bd1075b2affb73552bf932e1c0a.js"></script>
+<script>
+  $( document ).ready(function() {
+    // Disables the index dropdown if it's not force.com
+    $('#select_subject').change(function() {
+        if (($(this).val().indexOf('Force.com') != -1) &#124;&#124; ($(this).val().indexOf('All Services') != -1)){
+          $('#select_type').prop('disabled',false);
+      } else {
+        $('#select_type').prop('disabled',true);
+      }
+    });
+    var percent = 0.40;
+    var add_width = (percent*window.innerHeight);
+    $("#open-console_btn").toggle(function(){
+      $("#open-console_btn").text('x');
+      $('#api-console').attr('scrolling','yes');
+      $('#api-console').animate({height: add_width},200);
+    },function(){
+      $("#open-console_btn").text('+');
+      $('#api-console').attr('scrolling','no');
+      $('#api-console').animate({height: 40 },200);
+    });
+    changeTocIconState();
+    // renderToc();
+    var lastSlashIndex = location.pathname.lastIndexOf("/");
+    var lastSlash = lastSlashIndex + 1;
+    var pageURL = location.pathname.substr(lastSlash);
+    var pageName = pageURL.substr(0, pageURL.lastIndexOf("."));
+    if( pageName != undefined && pageName != ''){
+      var foundLi = $("div#" + pageName);
+      foundLi = $("a[href~='" + pageURL + "']");
+      $("a[href~='" + pageURL + "']").parent("div").toggleClass('active');
+      $("a[href~='" + pageURL + "']").parents('div.collapse').collapse('show');
+    }
+  });
+</script>
+<div class='clear'></div>
+<!-- omniture_analytics_code -->
+<!--
+<div id='omniture'>
+<script src='//www.salesforce.com/common/assets/js/min/footer-dfc-min.js' type='text/javascript'></script>
+</div>
+-->
+
+<!-- retargeting_code -->
+<img height='1' src='//d.adroll.com/ipixel/KHANGVX5FNHJFGIKX7U7K5/ZDMR3ICVVVCZPHFRE3X6IU' width='1'>
+
+<script>
+  dataLayer = [];
+</script>
+<noscript>
+<iframe height='0' src='//www.googletagmanager.com/ns.html?id=GTM-KJPMZK' style='display:none;visibility:hidden' width='0'></iframe>
+</noscript>
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]&#124;&#124;[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KJPMZK');
+</script>
+
+<script>
+  adroll_adv_id = "KHANGVX5FNHJFGIKX7U7K5";
+  adroll_pix_id = "ZDMR3ICVVVCZPHFRE3X6IU";
+  (function () {
+    var oldonload = window.onload;
+    window.onload = function() {
+      __adroll_loaded=true;
+      var scr = document.createElement("script");
+      var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+      scr.setAttribute('async', 'true');
+      scr.type = "text/javascript";
+      scr.src = host + "/j/roundtrip.js";
+      ((document.getElementsByTagName('head') &#124;&#124; [null])[0] &#124;&#124;
+        document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+      if(oldonload) oldonload();
+    };
+  }());
+  
+  (function() {
+    window._pa = window._pa &#124;&#124; {};
+    // _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
+    // _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
+    // _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads
+    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+    pa.src = ('https:' === document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/52f42c76b4f4376fc1000003.js";
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+  })();
+</script>
+
+<div id='hidden'>
+<!-- Trailhead on trailhead:  (production Deployed: ) -->
+</div>
+</body>
+</html>
+
+12:41:45.6 (803879502)|USER_DEBUG|[53]|DEBUG|60
+12:41:45.6 (803915239)|USER_DEBUG|[54]|DEBUG|66900
+12:41:45.6 (804644073)|SOQL_EXECUTE_BEGIN|[72]|Aggregations:0|SELECT Id, Name, trailheadId__c FROM Participant__c WHERE trailheadId__c = :tmpVar1
+12:41:45.6 (810295276)|SOQL_EXECUTE_END|[72]|Rows:1
+12:41:45.6 (810874701)|SOQL_EXECUTE_BEGIN|[73]|Aggregations:0|SELECT Id, Badges__c, ChallengeId__c, isNew__c, ParticipantId__c, Score__c, startBadges__c, startScore__c FROM ChallengeToParticipant__c
+12:41:45.6 (813380414)|SOQL_EXECUTE_END|[73]|Rows:3
+12:41:45.6 (814906554)|DML_BEGIN|[89]|Op:Update|Type:ChallengeToParticipant__c|Rows:3
+12:41:45.6 (848913138)|DML_END|[89]
+12:41:45.6 (849113943)|USER_DEBUG|[67]|DEBUG|{005F0000006u5DxIAI=(60, 66900)}
+12:41:45.6 (849138387)|SYSTEM_MODE_EXIT|false
+12:41:45.853 (853993952)|CUMULATIVE_LIMIT_USAGE
+12:41:45.853 (853993952)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 1 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:41:45.853 (853993952)|CUMULATIVE_LIMIT_USAGE_END
+
+12:41:45.6 (854054388)|CODE_UNIT_FINISHED|execute_anonymous_apex
+12:41:45.6 (855106313)|EXECUTION_FINISHED
