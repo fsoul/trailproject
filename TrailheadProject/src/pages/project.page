@@ -1,0 +1,14 @@
+<apex:page standardController="ChallengeToParticipant__c" extensions="trailheadPageController">
+      <apex:form >
+        <apex:pageBlock title="My Content" >
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="Refresh"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="My Content Section" columns="2">
+                <apex:inputField value="{!ChallengeToParticipant__c.Name}"/>
+                <apex:inputField value="{!ChallengeToParticipant__c.id}"/>
+            
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

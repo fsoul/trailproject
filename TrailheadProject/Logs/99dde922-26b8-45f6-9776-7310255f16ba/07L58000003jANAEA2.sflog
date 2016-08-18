@@ -1,0 +1,31 @@
+34.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+Execute Anonymous: TrailheadDataHandler d = new TrailheadDataHandler();
+Execute Anonymous: d.parse();
+08:13:09.5 (5356456)|USER_INFO|[EXTERNAL]|00558000001OWEZ|bilinskyi@project.com|Greenwich Mean Time|GMT+01:00
+08:13:09.5 (5386815)|EXECUTION_STARTED
+08:13:09.5 (5396103)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+08:13:09.5 (28274460)|SYSTEM_MODE_ENTER|false
+08:13:09.5 (28569205)|SYSTEM_MODE_EXIT|false
+08:13:09.5 (28617792)|SYSTEM_MODE_ENTER|false
+08:13:09.5 (28900343)|USER_DEBUG|[53]|DEBUG|98
+08:13:09.5 (28940404)|USER_DEBUG|[54]|DEBUG|86975
+08:13:09.5 (28967109)|SYSTEM_MODE_EXIT|false
+08:13:09.29 (29062216)|CUMULATIVE_LIMIT_USAGE
+08:13:09.29 (29062216)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+08:13:09.29 (29062216)|CUMULATIVE_LIMIT_USAGE_END
+
+08:13:09.5 (29118219)|CODE_UNIT_FINISHED|execute_anonymous_apex
+08:13:09.5 (30199642)|EXECUTION_FINISHED
