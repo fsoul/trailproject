@@ -1,35 +1,24 @@
 public class TrailheadDataHandler {
-	
-    private String runCalloutRequest(String trailheadId){
+
+   private String runCalloutRequest(String trailheadId){
    		
         String rawHtml;
         
         HttpRequest req = new HttpRequest(); 
         
-        //Set HTTPRequest Method
         req.setMethod('GET');
-        //Set HTTPRequest header properties
         req.setHeader('content-type', 'text/html');
-      
         req.setEndpoint('https://trailhead.salesforce.com/users/profiles/'+trailheadId);
        
         Http http = new Http();
         
-        try {
-            
-            //Execute web service call here		
+        try {		
             HTTPResponse res = http.send(req);	
-            
-            //Helpful debug messages
-            System.debug(res.toString());
-            System.debug('STATUS:'+res.getStatus());
-            System.debug('STATUS_CODE:'+res.getStatusCode());
-            System.debug(res.getBody());
             
             rawHtml = res.getBody();
             
         } catch(System.CalloutException e) {
-            //Exception handling goes here....
+            System.debug(e);
         }	
         return rawHtml;
     }
@@ -37,12 +26,11 @@ public class TrailheadDataHandler {
 	   
 	public List<String> parse(String html){
 		List<String>  res = new List<String> ();
-		
-
-		String badgeStart = '<div class=\'stats_number\'>';
+			
+		String badgeStart = '<div class=\'row\'>\n<div class=\'span2 user_stats\' data-target=\'#page2\' data-toggle=\'tab\' rel=\'badges\'>\n<a>\n<div class=\'stats_number\'>';
 		String badgeEnd = '</div>';
 		
-		String scoreStart = '<span class=\'trailhead-total-points\'>\n<i class=\'icon-star\'></i>\n<b>';
+		String scoreStart = '</div>\n<div class=\'span4 pull-right trailhead-points\'>\n<span class=\'trailhead-total-points\'>\n<i class=\'icon-star\'></i>\n<b>';
 		String scoreEnd = '</b>';
 		
 		String badge = html.substringBetween(badgeStart, badgeEnd);
@@ -50,8 +38,7 @@ public class TrailheadDataHandler {
 
 		res.add(badge);
 		res.add(score);
-		System.debug(badge);
-		System.debug(score);
+
 		return res;
 	}   
 	
@@ -64,21 +51,19 @@ public class TrailheadDataHandler {
 		}
 		updateInternData(internsData);
 
-		System.debug(internsData);
-
 	} 
 
 	public void updateInternData(Map<String, List<String>> internsData){
-		List<Participant__c> participantsList = [SELECT Id, Name, trailheadId__c FROM Participant__c WHERE trailheadId__c IN :internsData.keySet()];
-		List<ChallengeToParticipant__c> ChallengeToParticipantList = [SELECT Id, Badges__c, ChallengeId__c, isNew__c, ParticipantId__c, Score__c, startBadges__c, startScore__c FROM ChallengeToParticipant__c];
+		List<Intern__c> participantsList = [SELECT Id, Name, trailheadId__c FROM Intern__c WHERE trailheadId__c IN :internsData.keySet()];
+		List<Challenge_Participant__c> ChallengeToParticipantList = [SELECT Id, Badges__c, Challenge_Name__c, isNew__c, Intern_Name__c, Score__c, startBadges__c, startScore__c FROM Challenge_Participant__c];
 
-		for(ChallengeToParticipant__c junctionList : ChallengeToParticipantList){
-			for(Participant__c part: participantsList){
-				if(junctionList.ParticipantId__c == part.Id){
+		for(Challenge_Participant__c junctionList : ChallengeToParticipantList){
+			for(Intern__c part: participantsList){
+				if(junctionList.Intern_Name__c == part.Id){
 					if(junctionList.isNew__c){
 						junctionList.startBadges__c = Integer.valueOf(internsData.get(part.trailheadId__c)[0]);
 						junctionList.startScore__c = Integer.valueOf(internsData.get(part.trailheadId__c)[1]);
-						junctionList.isNew__c = false;
+						junctionList.isNew__c = false; 
 					}else{
 						junctionList.Badges__c = Integer.valueOf(internsData.get(part.trailheadId__c)[0]);
 						junctionList.Score__c = Integer.valueOf(internsData.get(part.trailheadId__c)[1]);
@@ -88,5 +73,4 @@ public class TrailheadDataHandler {
 		}
 		Database.update(ChallengeToParticipantList);
 	}
-    
 }

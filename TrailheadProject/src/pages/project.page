@@ -1,3 +1,22 @@
-<apex:page >
-
+<apex:page controller="TrailheadPageController">
+<apex:includeScript value="{!$Resource.MyJavascriptFile}"/>
+    <apex:form >
+        <apex:pageblock title="Trailhead Scoring">
+           <apex:pageBlockSection >
+                <apex:pageblocktable value="{!ChallengeParticipantList}" var="currentResult">
+                    <apex:column >
+                        <apex:outputLink target="_blank" value="https://trailhead.salesforce.com/users/profiles/{!currentResult.Intern_Name__r.trailheadId__c}"> 
+                            <apex:outputText value="{!currentResult.Intern_Name__r.Name }">
+                            </apex:outputText> 
+                        </apex:outputLink>
+                    </apex:column>
+                    <apex:column value="{!currentResult.startBadges__c }" />
+                    <apex:column value="{!currentResult.startScore__c }" />
+                    <apex:column value="{!currentResult.Badges__c}" />
+                    <apex:column value="{!currentResult.Score__c}" />
+                </apex:pageblocktable>
+            </apex:pageBlockSection>
+            <apex:commandButton action="{!refresh}" value="Refresh" id="RefreshButton"/>
+        </apex:pageblock>
+    </apex:form>
 </apex:page>

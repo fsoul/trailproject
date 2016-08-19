@@ -52,10 +52,12 @@
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>Badges__c</fullName>
+        <defaultValue>0</defaultValue>
         <externalId>false</externalId>
         <label>Badges</label>
         <precision>18</precision>
@@ -66,11 +68,12 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>ChallengeId__c</fullName>
+        <fullName>Challenge_Name__c</fullName>
         <externalId>false</externalId>
-        <label>ChallengeId</label>
+        <label>Challenge Name</label>
         <referenceTo>Challenge__c</referenceTo>
-        <relationshipName>ChallengeToUsers</relationshipName>
+        <relationshipLabel>Challenge Participants</relationshipLabel>
+        <relationshipName>InternToChallenge</relationshipName>
         <relationshipOrder>0</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
         <trackTrending>false</trackTrending>
@@ -78,12 +81,12 @@
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
     <fields>
-        <fullName>ParticipantId__c</fullName>
+        <fullName>Intern_Name__c</fullName>
         <externalId>false</externalId>
-        <label>ParticipantId</label>
-        <referenceTo>Participant__c</referenceTo>
-        <relationshipLabel>ChallengeToParticipants</relationshipLabel>
-        <relationshipName>ChallengeToParticipants</relationshipName>
+        <label>Intern Name</label>
+        <referenceTo>Intern__c</referenceTo>
+        <relationshipLabel>Challenge Participants</relationshipLabel>
+        <relationshipName>ChallengeToIntern</relationshipName>
         <relationshipOrder>1</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
         <trackTrending>false</trackTrending>
@@ -92,6 +95,7 @@
     </fields>
     <fields>
         <fullName>Score__c</fullName>
+        <defaultValue>0</defaultValue>
         <externalId>false</externalId>
         <label>Score</label>
         <precision>18</precision>
@@ -102,9 +106,18 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>startBadges__c</fullName>
+        <fullName>isNew__c</fullName>
+        <defaultValue>true</defaultValue>
         <externalId>false</externalId>
-        <label>startBadges</label>
+        <label>isNew</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>startBadges__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Start Badges</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -114,8 +127,9 @@
     </fields>
     <fields>
         <fullName>startScore__c</fullName>
+        <defaultValue>0</defaultValue>
         <externalId>false</externalId>
-        <label>startScore</label>
+        <label>Start Score</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -123,13 +137,13 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <label>ChallengeToParticipant</label>
+    <label>Challenge Participant</label>
     <nameField>
-        <displayFormat>A-{0000}</displayFormat>
-        <label>ChallengeToParticipant</label>
+        <displayFormat>Participant-{0}</displayFormat>
+        <label>Challenge Participant</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>ChallengeToParticipants</pluralLabel>
+    <pluralLabel>Challenge Participants</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>
