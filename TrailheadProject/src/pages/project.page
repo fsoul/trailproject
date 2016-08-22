@@ -1,7 +1,18 @@
 <apex:page controller="TrailheadPageController">
-<apex:includeScript value="{!$Resource.MyJavascriptFile}"/>
+<style>
+#challengeName{
+    font-size: 22px; 
+    margin-bottom: 10px;
+}
+.refresh{
+    width: 60px;
+    height: 30px;
+    margin: 10px;
+}
+</style>
     <apex:form >
         <apex:pageblock title="Trailhead Scoring">
+           <div id="challengeName"><span>Challenge Name: </span>{!ChallengeParticipantList[0].Challenge_Name__r.Name}</div>
            <apex:pageBlockSection >
                 <apex:pageblocktable value="{!ChallengeParticipantList}" var="currentResult">
                     <apex:column >
@@ -14,9 +25,12 @@
                     <apex:column value="{!currentResult.startScore__c }" />
                     <apex:column value="{!currentResult.Badges__c}" />
                     <apex:column value="{!currentResult.Score__c}" />
+                    <apex:column value="{!currentResult.Badges_Progress__c}" />
+                    <apex:column value="{!currentResult.Score_Progress__c}" />
                 </apex:pageblocktable>
             </apex:pageBlockSection>
-            <apex:commandButton action="{!refresh}" value="Refresh" id="RefreshButton"/>
+            <apex:commandButton action="{!refresh}" value="Refresh" id="RefreshButton" styleClass="refresh"/>
         </apex:pageblock>
+        
     </apex:form>
 </apex:page>

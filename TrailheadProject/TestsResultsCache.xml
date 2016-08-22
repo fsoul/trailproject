@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestsResultsCache
+    LastClearTime="0001-01-01T00:00:00">
+    <TestClasses>
+        <TestClass>
+            <TestClassId>01p58000007hcKKAAY</TestClassId>
+            <TestQueueId>709580000004pnEAAQ</TestQueueId>
+            <TestMethods>
+                <TestMethod>
+                    <ApexLogId>07L58000003jseVEAQ</ApexLogId>
+                    <Name>getInternsDataTest</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <TestClassId>01p58000007hcKKAAY</TestClassId>
+            <TestQueueId>709580000004pn4AAA</TestQueueId>
+            <TestMethods>
+                <TestMethod>
+                    <ApexLogId>07L58000003jseQEAQ</ApexLogId>
+                    <Name>getInternsDataTest</Name>
+                    <Message>System.StringException: Invalid id: intern1</Message>
+                    <StackTrace>Class.TrailheadDataHandlerTest.getInternsDataTest: line 21, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <TestClassId>01p58000007hcKKAAY</TestClassId>
+            <TestQueueId>709580000004pmzAAA</TestQueueId>
+            <TestMethods>
+                <TestMethod>
+                    <ApexLogId>07L58000003jseLEAQ</ApexLogId>
+                    <Name>getInternsDataTest</Name>
+                    <Message>System.StringException: Invalid id: test</Message>
+                    <StackTrace>Class.TrailheadDataHandlerTest.getInternsDataTest: line 21, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <TestClassId>01p58000007hcKKAAY</TestClassId>
+            <TestQueueId>709580000004pmuAAA</TestQueueId>
+            <TestMethods>
+                <TestMethod>
+                    <ApexLogId>07L58000003jseGEAQ</ApexLogId>
+                    <Name>getInternsDataTest</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <TestClassId>01p58000007hcKKAAY</TestClassId>
+            <TestQueueId>709580000004pmpAAA</TestQueueId>
+            <TestMethods>
+                <TestMethod>
+                    <ApexLogId>07L58000003jseBEAQ</ApexLogId>
+                    <Name>getInternsDataTest</Name>
+                    <Message>System.StringException: Invalid id: test</Message>
+                    <StackTrace>Class.TrailheadDataHandlerTest.getInternsDataTest: line 20, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <TestClassId>01p58000007hcKKAAY</TestClassId>
+            <TestQueueId>709580000004pmkAAA</TestQueueId>
+            <TestMethods>
+                <TestMethod>
+                    <ApexLogId>07L58000003jse6EAA</ApexLogId>
+                    <Name>getInternsDataTest</Name>
+                    <Message>System.StringException: Invalid id: test</Message>
+                    <StackTrace>Class.TrailheadDataHandlerTest.getInternsDataTest: line 20, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <TestClassId>01p58000007hdfQAAQ</TestClassId>
+            <TestQueueId>709580000004pmfAAA</TestQueueId>
+            <TestMethods>
+                <TestMethod>
+                    <ApexLogId>07L58000003jsdwEAA</ApexLogId>
+                    <Name>runCalloutRequestTest</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <TestClassId>01p58000007hcKKAAY</TestClassId>
+            <TestQueueId>709580000004pmgAAA</TestQueueId>
+            <TestMethods>
+                <TestMethod>
+                    <ApexLogId>07L58000003jse1EAA</ApexLogId>
+                    <Name>getInternsDataTest</Name>
+                    <Message>System.StringException: Invalid id: test</Message>
+                    <StackTrace>Class.TrailheadDataHandlerTest.getInternsDataTest: line 20, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <TestClassId>01p58000007hdfQAAQ</TestClassId>
+            <TestQueueId>709580000004plcAAA</TestQueueId>
+            <TestMethods>
+                <TestMethod>
+                    <Name>runCalloutRequestTest</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <TestClassId>01p58000007hcKKAAY</TestClassId>
+            <TestQueueId>709580000004pldAAA</TestQueueId>
+            <TestMethods>
+                <TestMethod>
+                    <Name>getInternsDataTest</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <TestClassId>01p58000007hcKKAAY</TestClassId>
+            <TestQueueId>709580000004plSAAQ</TestQueueId>
+            <TestMethods>
+                <TestMethod>
+                    <Name>getInternsDataTest</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <TestClassId>01p58000007hcKKAAY</TestClassId>
+            <TestQueueId>709580000004plNAAQ</TestQueueId>
+            <TestMethods>
+                <TestMethod>
+                    <Name>getInternsDataTest</Name>
+                    <Message>Methods defined as TestMethod do not support Web service callouts</Message>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <TestClassId>01p58000007hcKKAAY</TestClassId>
+            <TestQueueId>709580000004plDAAQ</TestQueueId>
+            <TestMethods>
+                <TestMethod>
+                    <Name>getInternsDataTest</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+    </TestClasses>
+</TestsResultsCache>

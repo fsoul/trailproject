@@ -4,7 +4,7 @@ public class TrailheadPageController {
     public List<Challenge_Participant__c> ChallengeParticipantList {get; set;}
         
     public TrailheadPageController (){
-        
+        getCurrentData();
     }
      
     private void getCurrentData(){
@@ -29,4 +29,5 @@ public class TrailheadPageController {
                         this.getCurrentData();
                 } 
     }
+	
 }

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestClassesCache>
+    <TestClasses>
+        <TestClass>
+            <Location>
+                <FilePath>C:\Users\fsoul\Documents\The Welkin Suite\Projects\trailproject\TrailheadProject\src\classes\TrailheadDataCalloutTest.cls</FilePath>
+                <StartOffset>0</StartOffset>
+                <EndOffset>46</EndOffset>
+                <EndBodyOffset>3764</EndBodyOffset>
+            </Location>
+            <Id>01p58000007hdfQAAQ</Id>
+            <Name>TrailheadDataCalloutTest</Name>
+            <TestMethods>
+                <TestMethod>
+                    <Name>runCalloutRequestTest</Name>
+                    <ClassName>TrailheadDataCalloutTest</ClassName>
+                    <Location>
+                        <FilePath>C:\Users\fsoul\Documents\The Welkin Suite\Projects\trailproject\TrailheadProject\src\classes\TrailheadDataCalloutTest.cls</FilePath>
+                        <StartOffset>50</StartOffset>
+                        <EndOffset>93</EndOffset>
+                        <EndBodyOffset>3762</EndBodyOffset>
+                    </Location>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <Location>
+                <FilePath>C:\Users\fsoul\Documents\The Welkin Suite\Projects\trailproject\TrailheadProject\src\classes\SiteLoginControllerTest.cls</FilePath>
+                <StartOffset>77</StartOffset>
+                <EndOffset>135</EndOffset>
+                <EndBodyOffset>557</EndBodyOffset>
+            </Location>
+            <Id>01p58000007hZ7AAAU</Id>
+            <Name>SiteLoginControllerTest</Name>
+            <TestMethods>
+                <TestMethod>
+                    <Name>testSiteLoginController</Name>
+                    <ClassName>SiteLoginControllerTest</ClassName>
+                    <Location>
+                        <FilePath>C:\Users\fsoul\Documents\The Welkin Suite\Projects\trailproject\TrailheadProject\src\classes\SiteLoginControllerTest.cls</FilePath>
+                        <StartOffset>141</StartOffset>
+                        <EndOffset>210</EndOffset>
+                        <EndBodyOffset>551</EndBodyOffset>
+                    </Location>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <Location>
+                <FilePath>C:\Users\fsoul\Documents\The Welkin Suite\Projects\trailproject\TrailheadProject\src\classes\ForgotPasswordControllerTest.cls</FilePath>
+                <StartOffset>87</StartOffset>
+                <EndOffset>150</EndOffset>
+                <EndBodyOffset>505</EndBodyOffset>
+            </Location>
+            <Id>01p58000007hZ7GAAU</Id>
+            <Name>ForgotPasswordControllerTest</Name>
+            <TestMethods>
+                <TestMethod>
+                    <Name>testForgotPasswordController</Name>
+                    <ClassName>ForgotPasswordControllerTest</ClassName>
+                    <Location>
+                        <FilePath>C:\Users\fsoul\Documents\The Welkin Suite\Projects\trailproject\TrailheadProject\src\classes\ForgotPasswordControllerTest.cls</FilePath>
+                        <StartOffset>156</StartOffset>
+                        <EndOffset>229</EndOffset>
+                        <EndBodyOffset>503</EndBodyOffset>
+                    </Location>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <Location>
+                <FilePath>C:\Users\fsoul\Documents\The Welkin Suite\Projects\trailproject\TrailheadProject\src\classes\ChangePasswordControllerTest.cls</FilePath>
+                <StartOffset>82</StartOffset>
+                <EndOffset>145</EndOffset>
+                <EndBodyOffset>641</EndBodyOffset>
+            </Location>
+            <Id>01p58000007hZ7EAAU</Id>
+            <Name>ChangePasswordControllerTest</Name>
+            <TestMethods>
+                <TestMethod>
+                    <Name>testChangePasswordController</Name>
+                    <ClassName>ChangePasswordControllerTest</ClassName>
+                    <Location>
+                        <FilePath>C:\Users\fsoul\Documents\The Welkin Suite\Projects\trailproject\TrailheadProject\src\classes\ChangePasswordControllerTest.cls</FilePath>
+                        <StartOffset>151</StartOffset>
+                        <EndOffset>224</EndOffset>
+                        <EndBodyOffset>635</EndBodyOffset>
+                    </Location>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <Location>
+                <FilePath>C:\Users\fsoul\Documents\The Welkin Suite\Projects\trailproject\TrailheadProject\src\classes\SiteRegisterControllerTest.cls</FilePath>
+                <StartOffset>61</StartOffset>
+                <EndOffset>122</EndOffset>
+                <EndBodyOffset>720</EndBodyOffset>
+            </Location>
+            <Id>01p58000007hZ7CAAU</Id>
+            <Name>SiteRegisterControllerTest</Name>
+            <TestMethods>
+                <TestMethod>
+                    <Name>testRegistration</Name>
+                    <ClassName>SiteRegisterControllerTest</ClassName>
+                    <Location>
+                        <FilePath>C:\Users\fsoul\Documents\The Welkin Suite\Projects\trailproject\TrailheadProject\src\classes\SiteRegisterControllerTest.cls</FilePath>
+                        <StartOffset>128</StartOffset>
+                        <EndOffset>182</EndOffset>
+                        <EndBodyOffset>718</EndBodyOffset>
+                    </Location>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <Location>
+                <FilePath>C:\Users\fsoul\Documents\The Welkin Suite\Projects\trailproject\TrailheadProject\src\classes\CalloutMock.cls</FilePath>
+                <StartOffset>0</StartOffset>
+                <EndOffset>60</EndOffset>
+                <EndBodyOffset>3735</EndBodyOffset>
+            </Location>
+            <Id>01p58000007hblyAAA</Id>
+            <Name>CalloutMock</Name>
+            <TestMethods />
+        </TestClass>
+        <TestClass>
+            <Location>
+                <FilePath>C:\Users\fsoul\Documents\The Welkin Suite\Projects\trailproject\TrailheadProject\src\classes\TrailheadDataHandlerTest.cls</FilePath>
+                <StartOffset>0</StartOffset>
+                <EndOffset>46</EndOffset>
+                <EndBodyOffset>1519</EndBodyOffset>
+            </Location>
+            <Id>01p58000007hcKKAAY</Id>
+            <Name>TrailheadDataHandlerTest</Name>
+            <TestMethods>
+                <TestMethod>
+                    <Name>getInternsDataTest</Name>
+                    <ClassName>TrailheadDataHandlerTest</ClassName>
+                    <Location>
+                        <FilePath>C:\Users\fsoul\Documents\The Welkin Suite\Projects\trailproject\TrailheadProject\src\classes\TrailheadDataHandlerTest.cls</FilePath>
+                        <StartOffset>51</StartOffset>
+                        <EndOffset>91</EndOffset>
+                        <EndBodyOffset>1513</EndBodyOffset>
+                    </Location>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+        <TestClass>
+            <Location>
+                <FilePath>C:\Users\fsoul\Documents\The Welkin Suite\Projects\trailproject\TrailheadProject\src\classes\MyProfilePageControllerTest.cls</FilePath>
+                <StartOffset>115</StartOffset>
+                <EndOffset>177</EndOffset>
+                <EndBodyOffset>2416</EndBodyOffset>
+            </Location>
+            <Id>01p58000007hZ7IAAU</Id>
+            <Name>MyProfilePageControllerTest</Name>
+            <TestMethods>
+                <TestMethod>
+                    <Name>testSave</Name>
+                    <ClassName>MyProfilePageControllerTest</ClassName>
+                    <Location>
+                        <FilePath>C:\Users\fsoul\Documents\The Welkin Suite\Projects\trailproject\TrailheadProject\src\classes\MyProfilePageControllerTest.cls</FilePath>
+                        <StartOffset>184</StartOffset>
+                        <EndOffset>230</EndOffset>
+                        <EndBodyOffset>2414</EndBodyOffset>
+                    </Location>
+                </TestMethod>
+            </TestMethods>
+        </TestClass>
+    </TestClasses>
+    <CacheDate>2016-08-20T20:30:38.7201175Z</CacheDate>
+    <IsLocal>true</IsLocal>
+</TestClassesCache>
